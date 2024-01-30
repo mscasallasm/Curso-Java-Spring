@@ -7,9 +7,9 @@ public class Purchase {
     private int purchaseId;
     private String clientId;
     private LocalDateTime date;
-    private String paymentMethod;
+    private Character paymentMethod;
     private String comment;
-    private String state;
+    private Character state;
     private List<PurchaseItem> items;
 
     public int getPurchaseId() {
@@ -36,11 +36,11 @@ public class Purchase {
         this.date = date;
     }
 
-    public String getPaymentMethod() {
+    public Character getPaymentMethod() {
         return paymentMethod;
     }
 
-    public void setPaymentMethod(String paymentMethod) {
+    public void setPaymentMethod(Character paymentMethod) {
         this.paymentMethod = paymentMethod;
     }
 
@@ -52,19 +52,19 @@ public class Purchase {
         this.comment = comment;
     }
 
-    public String getState() {
+    public Character getState() {
         return state;
     }
 
-    public void setState(String state) {
+    public void setState(Character state) {
         this.state = state;
     }
 
-    public List<PurchaseItem> getItem() {
+    public List<PurchaseItem> getItems() {
         return items;
     }
 
-    public void setItem(List<PurchaseItem> item) {
+    public void setItems(List<PurchaseItem> item) {
         this.items = item;
     }
 }
